@@ -1,9 +1,11 @@
 import time
 import webbrowser
 
-#how much views you want
+user = int(input('How many time do you want it to view? '))
+# How many time do you want it to view?
 
-print("Enjoy your Time\n" +time.ctime())
-for count in range(30):
+if user < 1:
+	print("Enjoy your Time\n" +time.ctime())
+for count in range(user):
     time.sleep(5) 
     webbrowser.open("https://www.youtube.com/watch?v=o6A7nf3IeeA")
